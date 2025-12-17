@@ -1,5 +1,4 @@
-use exam::object::reservation::Reservation;
-use exam::score;
+use exam::server::server;
 use tracing::info;
 use tracing_subscriber::filter::LevelFilter;
 
@@ -9,7 +8,7 @@ async fn main() {
         .with_max_level(LevelFilter::DEBUG)
         .init();
     info!("日志初始化成功");
-    exam::fn3();
+    server().await.unwrap();
     //exam::fn1();
     //score::lib::main_loop().await;
 }

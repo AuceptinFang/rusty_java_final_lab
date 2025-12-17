@@ -1,5 +1,6 @@
 pub mod object;
 pub mod score;
+pub mod server;
 use crate::object::reservation::Reservation;
 use crate::object::seat::*;
 use crate::score::*;
@@ -42,8 +43,4 @@ pub fn fn1() {
         debug!("生成预约{}类, {}小时", r, hours);
     }
     calc_daily_income(reservations);
-}
-
-pub fn fn3(){
-    
 }

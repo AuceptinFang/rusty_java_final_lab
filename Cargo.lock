@@ -288,6 +288,7 @@ dependencies = [
  "anyhow",
  "csv",
  "dotenvy",
+ "parking_lot",
  "rand 0.9.2",
  "serde",
  "sqlx",

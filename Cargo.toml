@@ -13,4 +13,6 @@ tokio = {version = "1.48.0", features = ["full"]}
 sqlx = {version = "0.8.6", features = ["sqlite", "runtime-tokio", "tls-native-tls"] }
 serde = { version = "1.0", features = ["derive"] }
 dotenvy = "0.15.7"
+parking_lot = "0.12.5"
 csv = "1.1"
+
