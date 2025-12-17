@@ -64,7 +64,7 @@ impl Seat{
         }
     }
 
-    pub async fn cancel(&mut self, id : &str) -> Result<String>{
+    pub async fn cancel(&self, id: &str) -> Result<String> {
         let result = {
             let mut guard = self.state.lock();
             if let Some(seat_id) = guard.user_map.remove(&id.to_string()) {
@@ -83,7 +83,7 @@ impl Seat{
             }
         };
         if let Ok(ref seat) = result {
-            println!("[Log] 用户 {} 退票成功: {}", id, seat);
+            println!("用户 {} 退票成功: {}", id, seat);
         }
         result
     }

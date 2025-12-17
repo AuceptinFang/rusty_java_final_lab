@@ -1,4 +1,4 @@
 mod server;
-mod seat;
+pub(crate) mod seat;
 
 pub use server::server;
