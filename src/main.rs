@@ -8,7 +8,8 @@ async fn main() {
         .with_max_level(LevelFilter::DEBUG)
         .init();
     info!("日志初始化成功");
-    server().await.unwrap();
-    //exam::fn1();
-    //score::lib::main_loop().await;
+
+    server().await.unwrap();            // p3
+    //exam::fn1();                      // p1
+    //score::lib::main_loop().await;    // p2
 }
